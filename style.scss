@@ -1,0 +1,97 @@
+body {
+  background: rgb(31, 31, 31);
+  color: rgb(219, 219, 219);
+}
+
+// -------- UTILITY CLASSES -------- //
+
+.container { 
+  min-width: 10%;
+  margin: 0.5rem 1rem;
+}
+
+.l-heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  background: black;
+  color: rgb(202, 202, 202);
+  text-decoration: none;
+  border: 1px rgb(190, 190, 190) solid;
+}
+
+// -------- NAVBAR -------- // 
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.full-nav {
+  display: none;
+}
+
+.hamburger {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.logo {
+  padding-top: 1.5rem;
+  img {
+    width: 7rem;
+  }
+}
+
+
+// -------- SHOWCASE -------- //
+
+#showcase {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(167, 167, 167, 0.3)), 
+  url(images/small-background.jpg);
+  height: 85vh;
+  background-size: cover; 
+  background-position: center;
+  h1 {
+    color: white;
+  }
+}
+
+// -------- ACTION SECTION -------- //
+
+#action {
+  height: 15vh;
+  display: flex;
+  .btn {
+    margin: 0 auto;
+    align-self: center;
+  }
+}
+
+
+// MEDIA QUERIES
+
+// Medium devices 
+@media (min-width: 320px) { 
+
+ }
+
+// Large devices 
+// @media (min-width: 600px) { 
+//   .large {
+//     display: block;
+//   }
+//   .small {
+//     display: none;
+//   }
+//  }
+
+
