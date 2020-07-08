@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #1f1f1f;
   color: #dbdbdb;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -68,26 +74,32 @@ body {
 }
 
 .ham-container .close {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  font-size: 4rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 2rem;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.2rem;
+  right: 1.2rem;
   color: black;
 }
 
 .ham-container .ham-content {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  background: #505050;
+  padding: 5rem 4rem;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
-  color: black;
-  list-style: none;
+  color: #ececec;
   margin: 0 auto;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ham-container .ham-content ul {
+  list-style: none;
 }
 
 #showcase {
