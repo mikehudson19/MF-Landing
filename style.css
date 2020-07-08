@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 
 .container {
   min-width: 10%;
-  margin: 0.5rem 1rem;
+  margin: 0 2rem;
 }
 
 .l-heading {
@@ -20,7 +21,13 @@ body {
 }
 
 .py-3 {
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-3 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .btn {
@@ -42,6 +49,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 0.8rem;
 }
 
 .full-nav {
@@ -53,11 +61,11 @@ body {
   font-size: 1.5rem;
 }
 
-.logo {
+img {
   padding-top: 1.5rem;
 }
 
-.logo img {
+img img {
   width: 7rem;
 }
 
@@ -98,10 +106,6 @@ body {
   display: flex;
 }
 
-.ham-container .ham-content ul {
-  list-style: none;
-}
-
 #showcase {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(167, 167, 167, 0.3))), url(images/small-background.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(167, 167, 167, 0.3)), url(images/small-background.jpg);
@@ -112,6 +116,10 @@ body {
 
 #showcase h1 {
   color: white;
+}
+
+#showcase img {
+  width: 8rem;
 }
 
 #action {
@@ -126,5 +134,48 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (min-width: 660px) {
+  .navbar {
+    padding-top: 1.5rem;
+  }
+  .hamburger {
+    display: none;
+  }
+  .full-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+  }
+  .full-nav .active {
+    background: #ebebeb;
+    color: black;
+  }
+  .full-nav li {
+    padding: 0.4rem 0.9rem;
+    margin: 0.4rem 0;
+  }
+  .full-nav li:hover {
+    background: #ebebeb;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 880px) {
+  #showcase {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.5))), url(/images/medium-background.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(/images/medium-background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  #showcase h1 {
+    font-size: 3rem;
+  }
+  #showcase img {
+    width: 12rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

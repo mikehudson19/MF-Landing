@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 
 .container { 
   min-width: 10%;
-  margin: 0.5rem 1rem;
+  margin: 0 2rem;
 }
 
 .l-heading {
@@ -22,7 +23,13 @@ body {
 }
 
 .py-3 {
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-3 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .btn {
@@ -39,6 +46,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 0.8rem;
 }
 
 .full-nav {
@@ -50,7 +58,7 @@ body {
   font-size: 1.5rem;
 }
 
-.logo {
+img {
   padding-top: 1.5rem;
   img {
     width: 7rem;
@@ -83,9 +91,6 @@ body {
     line-height: 2.5rem;
     text-align: center;
     display: flex;
-    ul {
-      list-style: none;
-    }
   }
 }
 
@@ -103,6 +108,9 @@ body {
   h1 {
     color: white;
   }
+  img {
+    width: 8rem;
+  }
 }
 
 // -------- ACTION SECTION -------- //
@@ -119,19 +127,49 @@ body {
 
 // MEDIA QUERIES
 
-// Medium devices 
-@media (min-width: 320px) { 
+// Large devices 
+@media (min-width: 660px) { 
 
+  .navbar {
+    padding-top: 1.5rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .full-nav {
+    display: flex;
+    padding: 1rem;
+    .active {
+      background: rgb(235, 235, 235);
+      color: black;
+    }
+    li {
+      padding: 0.4rem 0.9rem;
+      margin: 0.4rem 0;
+      &:hover {
+        background: rgb(235, 235, 235);
+        color: black;
+        cursor: pointer;
+      }
+      
+    }
+  }
  }
 
-// Large devices 
-// @media (min-width: 600px) { 
-//   .large {
-//     display: block;
-//   }
-//   .small {
-//     display: none;
-//   }
-//  }
+ @media (min-width: 880px) {
+  #showcase {
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.5)), url(/images/medium-background.jpg);
+    background-position: center;
+    background-size: cover;
+    h1 {
+      font-size: 3rem;
+    }
+    img {
+      width: 12rem;
+    }
+  }
+ }
 
 
