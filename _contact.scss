@@ -1,0 +1,25 @@
+.contact {
+  &__content {
+    @include flexCol(column);
+    @include medium-screen {
+      flex-direction: row;
+    }
+  }
+  &__card {
+    @include flexCol(column);
+    @include medium-screen {
+      width: 100%;
+    }
+    background: rgb(48, 48, 48);
+    height: 40vh;
+    text-align: center;
+  }
+  &__header {
+    padding: 1rem 0;
+    font-size: $large-heading;
+    text-align: center;
+  }
+  &__item {
+    padding: 0.6rem;
+  }
+}

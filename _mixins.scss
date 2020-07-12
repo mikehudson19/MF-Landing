@@ -1,0 +1,11 @@
+@mixin medium-screen {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin flexCol ($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+}

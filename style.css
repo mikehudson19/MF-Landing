@@ -24,6 +24,10 @@ body {
   display: none;
 }
 
+.navbar__img {
+  width: 8rem;
+}
+
 .ham-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +64,7 @@ body {
   text-align: center;
 }
 
-#showcase {
+.showcase {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(167, 167, 167, 0.3))), url(images/small-background.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(167, 167, 167, 0.3)), url(images/small-background.jpg);
   height: 85vh;
@@ -68,27 +72,38 @@ body {
   background-position: center;
 }
 
-#showcase h1 {
-  color: white;
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
 }
 
-#showcase img {
-  width: 8rem;
+.hero__header {
+  text-align: center;
 }
 
 .action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 15vh;
   background: #303030;
 }
 
 .action__btn {
-  margin: 0 auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   background: white;
   padding: 0.6rem 1rem;
   text-decoration: none;
@@ -100,11 +115,6 @@ body {
   color: white;
 }
 
-.action__btn--secondary {
-  background: #01ac01;
-  color: white;
-}
-
 .display__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,6 +123,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .display__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .display__card {
@@ -143,11 +165,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .contact__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .contact__card {
-  background: #303030;
-  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,16 +187,62 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #303030;
+  height: 40vh;
   text-align: center;
+}
+
+@media (min-width: 600px) {
+  .contact__card {
+    width: 100%;
+  }
 }
 
 .contact__header {
   padding: 1rem 0;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .contact__item {
   padding: 0.6rem;
+}
+
+@media (min-width: 880px) {
+  .showcase {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.5))), url(/images/medium-background.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(/images/medium-background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .navbar__img {
+    width: 8rem;
+  }
+  .navbar__list {
+    font-size: 1rem;
+  }
+  .navbar__item {
+    padding: 0.8rem 1.2rem;
+  }
+  .navbar__item:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+  }
+  .hero__header {
+    font-size: 4rem;
+  }
+  .action {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .action__btn {
+    margin: 0 3rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -196,21 +274,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-}
-
-@media (min-width: 880px) {
-  #showcase {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.5))), url(/images/medium-background.jpg);
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(/images/medium-background.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  #showcase h1 {
-    font-size: 3rem;
-  }
-  #showcase img {
-    width: 12rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

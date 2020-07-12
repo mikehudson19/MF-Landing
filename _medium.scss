@@ -1,0 +1,25 @@
+@media (min-width: 600px) {
+  .navbar {
+    padding: 3rem;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      padding-left: 1rem;
+    }
+    &__hamburger {
+      display: none;
+    }
+  }
+
+  .display {
+    flex-direction: row;
+  }
+
+  .contact {
+    &__content {
+      flex-direction: row;
+    }
+  }
+}
