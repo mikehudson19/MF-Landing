@@ -25,3 +25,14 @@ document.addEventListener('click', (e) => {
     hamburger.style.display = 'block';
   } 
 })
+
+
+// GOOGLE MAPS API
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.querySelector('.contact__card--map'), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 5
+  });
+}
